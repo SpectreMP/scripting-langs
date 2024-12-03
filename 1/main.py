@@ -3,7 +3,7 @@ import requests
 from typing import Dict, Optional
 
 
-class APIClient:
+class Client:
     def __init__(self) -> None:
         self.base_url = 'https://jsonplaceholder.typicode.com'
         self.timeout = 30
@@ -78,7 +78,7 @@ class APIClient:
 
 
 def main() -> None:
-    client = APIClient()
+    client = Client()
 
     client.get_even_user_posts()
 
